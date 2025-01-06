@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  json-server:
+    image: clue/json-server
+    ports:
+      - "3000:80"
+    volumes:
+      - ./data:/data
+    command: json-server --watch /data/db.json
