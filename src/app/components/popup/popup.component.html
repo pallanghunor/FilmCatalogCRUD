@@ -1,4 +1,4 @@
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] p-5 bg-gray-200 rounded-xl transition-transform duration-300" [ngClass]="{ 'scale-75 opacity-0 pointer-events-none': !film, 'scale-100 opacity-100 pointer-events-auto': film}">
+<div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] p-5 bg-gray-200 rounded-xl transition-transform duration-300" [ngClass]="{ 'scale-75 opacity-0 pointer-events-none': !film, 'scale-100 opacity-100 pointer-events-auto': film}">
   <h2 class="text-xl font-bold mb-4">Film Details</h2>
   <form *ngIf="film" #filmForm="ngForm">
     <div class="mb-4">
