@@ -1,0 +1,29 @@
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] p-5 bg-gray-200 rounded-xl transition-transform duration-300" [ngClass]="{ 'scale-75 opacity-0 pointer-events-none': !film, 'scale-100 opacity-100 pointer-events-auto': film}">
+  <h2 class="text-xl font-bold mb-4">Film Details</h2>
+  <form>
+    <div class="mb-4">
+      <label for="title" class="block">Title</label>
+      <input type="text" id="title" name="title" class="w-full p-2 rounded" required>
+    </div>
+    <div class="mb-4">
+      <label for="director" class="block">Director</label>
+      <input type="text" id="director" name="director" class="w-full p-2 rounded" required>
+    </div>
+    <div class="mb-4">
+      <label for="year" class="block">Year</label>
+      <input type="number" id="year" name="year" class="w-full p-2 rounded" required>
+    </div>
+    <div class="mb-4">
+      <label for="genre" class="block">Genre</label>
+      <input type="text" id="genre" name="genre" class="w-full p-2 rounded" required>
+    </div>
+    <div class="mb-4">
+      <label for="rating" class="block">Rating</label>
+      <input type="number" id="rating" name="rating" class="w-full p-2 rounded" required>
+    </div>
+    <div class="flex justify-end gap-2">
+      <button type="button" class="bg-red-500 text-white px-4 py-2 rounded" (click)="onCancel()">Cancel</button>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Save</button>
+    </div>
+  </form>
+</div>
